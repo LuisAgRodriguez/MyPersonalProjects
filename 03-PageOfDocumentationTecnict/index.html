@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, scale-initial=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Commands-Linux</title>
+</head>
+<body>
+  
+  <nav id="navbar">
+    <header class="nav-header head-der">Comandos Basicos de Linux</header>
+    <a href="#Introduccion_de_Linux" class="nav-link">Introduccion de Linux</a>
+    <a href="#Consola" class="nav-link">Consola</a>
+    <a href="#Comandos" class="nav-link">Comandos</a>
+    <a href="#ls_y_cd" class="nav-link">ls y cd</a>
+    <a href="#cp_y_mv" class="nav-link">cp y mv</a>
+    <a href="#mkdir_y_touch" class="nav-link">mkdir y touch</a>
+    <a href="#rm_y_cat" class="nav-link">rm y cat</a>
+    <a href="#vim_y_nano" class="nav-link">vim y nano</a>
+    <a href="#sudo" class="nav-link sudo">sudo</a>
+  </nav>
+
+  <main id="main-doc">
+    
+    <section class="main-section" id="Introduccion_de_Linux">
+      <header>Introduccion de Linux</header>
+      <ul><li>¿Que es Linux?</li></ul>
+      <p>
+        Linux es un sistema operativo de codigo abierto o libre, al ser un sistema operativo
+        libre puede ser modificado o personalizado a gusto de cuaquier persona 
+        y es distribuible por cualquier persona o empresa, pero se distribuye bajo licencia 
+        de codigo abierto.
+      </p>
+      <p>
+        Linux es un kernel que seria el nucleo del sistema operativo que 
+        representa al menos el 50% del codigo del sistema.
+      </p>
+      <code>
+        user@Arch~$:sudo pacman -Syu
+        :: Sincronizando las bases de datos de los paquetes...
+         core está actualizado
+         extra está actualizado
+         multilib está actualizado
+        :: Iniciando actualización completa del sistema...
+         ...el sistema ya está actualizado.
+        </code>
+      <br>
+      <code>user@Ubuntu~$: Sudo apt update && sudo apt upgrade -y</code>
+      <ul>
+        <li>¿Para que se usa linux?
+          <p>Linux es muy usado en servidore web, routers, smart tv, relojes inteligentes, etc.
+            Tambien se puede usar para computadoras personales.
+          </p></li>
+        <li>¿Que son las distribuciones de linux?
+          <p>Son sistemas operativos linux modificado y personalizado por empresas, las distribucines 
+            mas famosas son linux mint, ubuntu, arch, fedora, debian, etc. Existen cientos de distribuciones 
+            basado basada en debian, ubuntu, arch y fedora.</p></li>
+      </ul>
+    <section>
+
+      <section class="main-section" id="Consola">
+      <header>Consola</header>
+      <ul>
+        <li>¿Que hace la consola o terminal de linux?</li>
+      </ul>
+      <p>La consola o terminal en linux es una shell, que el ususario puede usar para interactuar
+        con el ordenador usando comandos, esto se hacia hace mucho donde la los sistemas operativos
+      usaban unterfaz de linea de comandos, pero a hora es mucho mas facil interactuar con el ordenador
+      porque ya vienen con una interfaz grafica intuitiva.</p>
+      <p>La terminal en linux biene con bash que es un interprete de comando, es un procesador
+         de comandos que generalmente se ejecuta en una ventana de texto donde el usuario escribe 
+         comandos que causan acciones.
+        Hoy en esta epoca los usuarios estan cambiando bash por zsh o otros interprete de comandos
+      principalmete porque son mas avanzados y rapidios, se pueden personalizar, hasta ya bienen 
+    interprete de comandos con auto correctores y con la implementacion de la IA</p>
+      <code>Shell: bash 4.3.48 </code>
+      <br>
+      <code>Shell: zsh 5.9 </code>
+      <hr>
+    <section>
+
+      <section class="main-section" id="Comandos">
+      <header>Comandos</header>
+      <p>Bueno, en esta seccion vamos hablar de los sobre los comando que se usan en la terminal
+        en Linux.
+      </p>
+      <ul>¿Como se pueden usar los comandos?</ul>
+      <p>Los comando de linux hay muchos, pero se usan para algo en especifico como moverse por el directorio, 
+        modificar archivos, intalar aplicaciones, eliminar archivos o aplicacion, etc. Tambien los comando pueden
+        ser modificados por el usuario o crear comandos nuevos para abrir una aplicacion.
+      </p>
+      <code>user@Ubuntu~$: sudo apt install brave-browser</code>
+      <br>
+      <code>user@Arch~$: sudo pacman -Sy brave-browser</code>
+      <ul>
+        <li>En cada distribucin de linux bienen con gestores de paquetes que son pacman, apt, dnf, flatpak y snap estos
+          estos gestores de paquetes bienen con sus propios comandos y se usan para instalar, actualizar y
+          desinstalar aplicaciones
+        </li>
+        <li>Tambien hay gestores de paquetes que se pueden usar como una tienda como play store como en el caso de snap y flatpak.
+        </li>
+      </ul>
+    <section>
+
+      <section class="main-section" id="ls_y_cd">
+      <header>ls y cd</header>
+      <p>Ls es unos de los comandos mas usado en la consola, este comando solo se usa para
+        mostrar todos los archivos y carpetas dependiendo donde este ubicado el usuario, o 
+        poner ls mas la carpeta para ver los archivos que esta en esa carpeta.</p>
+        <code>
+         user@Ubuntu~:$ls
+         <br>
+         Descargas    Imágenes     Música       Vídeos
+         Documentos   JavaScript   Plantillas   yay
+         Escritorio   LuisM        Público      ejercicios.txt
+         <br>
+         user@Ubuntu~:$ls Descargas/
+         <br> height: 100%;
+         margin: 0 auto 0;
+         ventoy-1.0.99
+          'MiniOS10 LTSC-21H2 v2024.01 x64 - www.dprojects.org.rar'
+          www.dprojects.org.txt
+
+        </code>
+      <p>Cd su usa para entrar en las carpetas, poniendo cd mas el nomber de la carpeta, no solo
+        se usa para entrar en las carpeta tambien se usa para salir de las carpetas.
+      </p>
+      <code>
+        user@Ubuntu~:$cd Descargas/
+        <br>
+        user@Ubuntu/Descargas~:$ls
+        <br>
+        'MiniOS10 LTSC-21H2 v2024.01 x64 - www.dprojects.org.rar'
+        www.dprojects.org.txt
+        <br>
+        user@Ubuntu/Descargas~:$cd
+        <br>
+        
+        user@Ubuntu~:$ height: 100%;
+        margin: 0 auto 0;
+      </code>
+      <ul>
+        <li>ls puede hacer otros cosa si lo acompañas con una una flag, en la ultima seccion se
+          explicara que son las flag. La flag se usan con un comando como ls -letra o comando --palabra.
+        </li>
+        <li>Se pueden usar ls -a para mostrar los archivos mas los archivos ocultos que son archivo con
+          un punto al principio .archivo o .carpeta. </li>
+        <li>Cd se usa dos punto o un guion para salir de las carpetas, cd .. y cd - . Pruebenlon</li>
+      </ul>
+    <section>
+
+      <section class="main-section" id="cp_y_mv">
+      <header>cp y mv</header>
+      <p>Los comandos cp(copiar) y mv(mover) son comandos para copiar, mover y remplazar el nombre 
+        de un archivo o de una carpeta.
+      </p>
+      <p>Estos comando se usan asi; comando archivo destino, cp o mv prueba.txt prueba.</p>
+      <code>
+        user@Ubuntu~:$ls<br>
+        prueba prueba.txt<br>
+        user@Ubuntu~:$cp prueba.txt prueba<br>
+        user@Ubuntu~:$ls prueba<br>
+        prueba.txt
+      </code>
+      <code>
+        user@Ubuntu~:$ls<br>
+        prueba prueba.txt<br>
+        user@Ubuntu~:$mv prueba.txt prueba<br>
+        user@Ubuntu~:$cd prueba<br>
+        user@Ubuntu/prueba~:$ls<br>
+        prueba.txt<br>
+        user@Ubuntu/prueba~:$mv prueba.txt pr.txt<br>
+        user@Ubuntu/prueba~:$ls<br>
+        pr.txt<br>
+      </code>
+      <ul>
+        <li>Con mv se remplazo el nombre de prueba.txt a pr.txt.</li>
+        <li>Tambien se usas comandon secundoario para tener mas permisos y flag.</li>
+        <li>Como cp -rf(r(directorio y f(forzar))) archivo destino y sudo(para tener permisos) 
+          mv archivo destino o remplazo.</li>
+      </ul>
+    <section>
+
+      <section class="main-section" id="mkdir_y_touch">
+      <header>mkdir y touch</header>
+      <p>Estos comandos mkdir y touch se usan para crear carpetas y archivos, mkdir se usa para crear
+        carpetas y touch para crear los archivo.
+      </p>
+      <p>Vamos usar como ejemplo prueba y prueba.txt</p>
+      <code>
+        user@Ubuntu~:$mkdir prueba <br>
+        user@Ubuntu~:$ls<br>
+        prueba <br>
+      </code>
+      <code>
+        user@Ubuntu~:$cd prueba<br>
+        user@Ubuntu/prueba~:$touch prueba.txt <br>
+        user@Ubuntu/prueba~:$ls<br>
+        prueba.txt<br>
+      </code>
+      <ul>
+        <li>Bueno mkdir y touch no usan flag ni sudo, solo se usas para crear.</li>
+        <li>Se pueden crear archivos ocultos poniendole el punto al principio;</li>
+        <li>pureba.txt o .bashrc(archivo de configuracion).</li>
+      </ul>
+    <section>
+
+      <section class="main-section" id="rm_y_cat">
+      <header>rm y cat</header>
+      <p>El cat se usa para ver el contenido de los archivos y rm se usa para borrar archivos o carpetas.</p>
+      <p>Se uasn asi;</p>
+      <code>
+        user@Ubuntu~:$ls <br>
+        prueba.txt <br>
+        user@Ubuntu~:$ cat prueba.txt <br>
+        Hola Mundo
+      </code>
+      <code>
+        user@Ubuntu~:$ls <br>
+        prueba.txt <br>
+        user@Ubuntu~:$ rm -r prueba.txt <br>
+      </code>
+      <ul>
+        <li>Si el usuarios esta ubicado en el directorio que es home y users, se usa la flag -r para poder borrar un 
+          archivo del direcorio
+        </li>
+        <li>Si el usuario esta en una carpeta importante del sistema operativo, se usa el sudo para darle permiso de
+          super usuario asi poder borrar cualquier archivo.
+        </li>
+      </ul>
+    <section>
+
+      <section class="main-section" id="vim_y_nano">
+      <header>vim y nano</header>
+      <p>Estos comandos no son comandos, con editore de texto que se ejecutan en la terminal no es lo mismo que visual studio code,
+        nano es un editor de codigo facil de usar y ya viene instalado por defecto en linux y se usa en la terminal.
+      </p>
+      <p>Vim a diferencia de nano, vim es un editor de texto dificil de manejer, porque solo se usan atajos de teclado, pero es
+        un editor de texto muy rapidio y ligero para pc de gama baja.
+        En esta epoca no se usa mucho vim, ahora se usa una mas avanzado que es neovim.
+      </p>
+      <code>user@Ubuntu~:$nano archivo</code>
+      <code>user@Ubuntu~:$nvim archivo</code>
+      <ul>
+        <li>Nano te indica los atajos de teclado en la parte inferior de la termina.</li>
+        <li>Neovim es un editor de codigo muy personalizable, el usuario tiene la livertad de personalizarlo a su gusto.</li>
+        <li>Vim si es muy usado en estaopen epoca pero ahora se todo se cambiaron a neovim que es un editor de codigo avanzado.</li>
+      </ul>
+    <section>
+
+      <section class="main-section" id="sudo">
+      <header>sudo</header>
+      <p>Sudo es el comando mas usado en linux, se usa para dar permiso de superusuario asi el usuario pueda ejecutar cualquier
+        comando en cualquier carpeta.
+      </p>
+      <p>Tambien se puede ejecutar el usuario root poniendo;</p>
+      <code>
+        user@Ubuntu~:$sudo comando
+      </code>
+      <code>
+        user@Ubuntu~:$sudo su <br>
+        user@Ubuntu~/home/luis:# comando
+      </code>
+      <ul>
+        <li>En root se puede ejectar cualquier comando sin usar el sudo.</li>
+        <li>Si perzonaliza la bash o zsh las configuraciones se tienen que hacer en root tambien para que tenga
+          el misma diseño que el usuario. </li>
+      </ul>
+    <section>
+
+  </main>
+</body>
+</html>

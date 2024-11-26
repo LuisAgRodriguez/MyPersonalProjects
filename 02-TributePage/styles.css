@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+#title{
+  text-align: center;
+  font-family: "Redressed", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+#title{
+  background: linear-gradient(10deg, rgb(222, 206, 104), rgb(236, 227, 167));
+  width: 100%;
+  margin: 40px auto;
+  height: 90px;
+  padding: 10px;
+}
+h3 {
+  display: inline;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( rgb(105, 99, 64), rgb(202, 202, 183));
+}
+
+#img-div {
+  max-width: 600px;
+  min-width: 300px;
+  width: 75%;
+  height: auto;
+  padding: 10px 8px;
+  margin: 0 auto;
+  background: linear-gradient(90deg,rgb(221, 221, 211), rgb(234, 232, 214));
+  }
+
+figure {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid rgb(152, 152, 72);
+  }
+#img-caption {
+  font-style: normal;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: "Redressed", cursive;
+  display: inline;
+}
+#image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+section {
+  margin-left: -24px;
+  padding: 0 2px;
+}
+
+#tribute-info {
+  font-size: 14px;
+  font-style: italic;
+}
+li {
+  margin-top: 8px;
+}
+hr{
+  background-color: black;
+  border-color: black;
+  margin: 8px auto 0;
+  width: 95%;
+  height: 2px;
+}
+
+#tribute-link{
+  color: black;
+}
+
+a:visited{
+  color: rgb(6, 6, 6);
+}
+a:hover{
+  color: rgb(163, 140, 140);
+}
+a:active{
+  color: rgb(232, 178, 178);
+}
+  

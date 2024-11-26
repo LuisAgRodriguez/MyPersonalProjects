@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Register your details</title>
+  </head>
+  <body>
+    <h1 id="title">Register your details on FreeCodeCamp</h1>
+    <p id="description">Share this page to get more users to join, to have a large community.</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Rellena todas las casillas</legend>
+      <label id="name-label">Full name: <input class="one" type="text" id="name" placeholder="Your Name" required/></label>
+      <label id="email-label">Email:<input class="one" type="email" id="email" placeholder="Your Email" required/></label>
+      <label id="number-label">Please enter your Age: <input type="number" id="number" placeholder="Age" min="13" max="120" /></label>
+      </fieldset>
+      <div>
+      <label for="dropdown">Elija un opcion:</label>
+     <select id="dropdown">
+       <option value="">Elija Una</option>
+       <option value="2">Auto</option>
+       <option value="3">Moto</option>
+       <option value="4">Bicicleta</option>
+       </select>
+       </div>
+       <fieldset>
+         <legend>Elija la correcta</legend>
+      <label class="rad"><input type="radio" name="radio" value="radio-one" />Auto de oro</label>
+      <label class="rad"><input type="radio" name="radio" value="radio-two" />Auto de cobre</label>
+      <label class="rad"><input type="radio" name="radio" value="radio-tree" />Auto normal</label>
+      </fieldset>
+      <fieldset>
+        <legend>Marca cual prefieras</legend>
+      <label><input type="checkbox" name="box-one" value="box-two" />Caballo</label>
+     <label><input type="checkbox" name="box-one" value="box-two" />Leon</label>
+      <label><input type="checkbox" name="box-one" value="box-two" />Puma</label>
+      </fieldset>
+      <fieldset>
+        <legend>Escriba un comentario</legend>
+      <textarea  id="comen" type="text" placeholder="Comenta..." rows="3"
+      cols="20"></textarea>
+      </fieldset>
+      <input class="submit" type="submit" id="submit" />
+    </form>
+  </body>
+ <html/>
